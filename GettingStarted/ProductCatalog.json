@@ -1,0 +1,19 @@
+{
+    "$schema": "./ProductCatalog-schema.json",
+    "productId": 1,
+    "productName": "A green door",
+    "price": 2.3,
+    "dimensions": {
+        "height": 5,
+        "width": 1,
+        "length": 2
+    },
+    "tags": ["Test", "Test2"],
+    "warehouseLocation": {
+        "longitude": -100,
+        "latitude": 80
+    }
+    
+
+    
+}

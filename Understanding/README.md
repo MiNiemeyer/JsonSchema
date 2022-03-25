@@ -1,0 +1,1 @@
+http://json-schema.org/understanding-json-schema/

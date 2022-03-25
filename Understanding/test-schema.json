@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://yourdomain.com/schemas/myschema.json",
+    "description": "A person",
+    "type":"object",
+    "properties": {
+        "$schema":{
+            "type":"string"
+        },
+        "name":{
+            "type":"string",
+            "minLength":10,
+            "maxLength": 20
+        },
+        "birthdate":{
+            "type":"string",
+             "format": "date"
+        },
+        "email":{
+            "type":"string",
+            "format": "email"
+        },
+        "ip4":{
+            "type":"string",
+            "format": "ipv4"
+        },
+        "RegEx":{
+            "type":"string",
+            "pattern": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+        },
+        "type":{
+            "enum": ["residential", "business"]
+        }        
+    },
+    "required": ["type"],
+    "patternProperties": {
+        "^I_":{
+            "type":"integer"
+        },
+        "^S_":{
+            "type":"string"
+        }
+    },
+    
+    "if": {
+        "type":"object",
+        "properties": {
+            "type":{"const": "business"}
+        },
+        "required": ["type"]
+    },
+    "then": {
+        "properties": {
+            "department":{
+                "type":"string"
+            }
+        }
+    },
+   "unevaluatedProperties": false 
+   
+
+}

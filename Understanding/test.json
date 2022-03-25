@@ -1,0 +1,14 @@
+{
+    "$schema": "./test-schema.json",
+    "name": "Tesaa454545454545454",
+    "birthdate": "1970-06-07",
+    "email": "Mni_col@hotmail.com",
+    "ip4": "192.168.22.5",
+    "RegEx": "(123)555-1212",
+    "I_5": 4545,
+    "S_1": "1545",
+    "type": "residential",
+    "department": "Mobil"
+
+
+}
